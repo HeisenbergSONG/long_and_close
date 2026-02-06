@@ -8,7 +8,7 @@
     "answer": "安妮：我觉得这和南非钻石盗窃案有关联，我们不能坐视不管。",
     "topic": "小说情节推理（侦探类小说）",
     "hallucination_check": {"gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}, "gemini-2.5-flash": {"final_result": {"conflict": 0, "baseless_info": 0}}},
-    "token_length_qwen3": 4861,
+    "token_length_qwen3": 52861,
     "dialogue_structure": {
       "participants": ["安妮", "哈里"],
       "total_turns": 4
@@ -23,7 +23,7 @@
     "answer": "Anne: I think it's connected to the South African diamond theft case—we can't just ignore it.",
     "topic": "Novel Plot Reasoning (Detective Novel)",
     "hallucination_check": {"claude-sonnet-4": {"final_result": {"conflict": 0, "baseless_info": 0}}, "gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}},
-    "token_length_qwen3": 7641,
+    "token_length_qwen3": 52641,
     "dialogue_structure": {
       "participants": ["Anne", "Harry"],
       "total_turns": 4
@@ -38,7 +38,7 @@
     "answer": "领导B：全体居民人均可支配收入增长要与经济增长基本同步。",
     "topic": "政府文件（经济社会发展目标）",
     "hallucination_check": {"gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}, "gemini-2.5-flash": {"final_result": {"conflict": 0, "baseless_info": 0}}},
-    "token_length_qwen3": 6742,
+    "token_length_qwen3": 56742,
     "dialogue_structure": {
       "participants": ["领导A", "领导B"],
       "total_turns": 3
@@ -53,7 +53,7 @@
     "answer": "Developer: It joins them with spaces at the end to form a clean attribute string.",
     "topic": "工程代码理解",
     "hallucination_check": {"claude-sonnet-4": {"final_result": {"conflict": 0, "baseless_info": 0}}, "gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}},
-    "token_length_qwen3": 7572,
+    "token_length_qwen3": 57572,
     "dialogue_structure": {
       "participants": ["Reviewer", "Developer"],
       "total_turns": 3
@@ -68,7 +68,7 @@
     "answer": "律师B：而且两被告离婚协议中写明无债务，但法院仍判连带清偿。",
     "topic": "法律（民事判决案例）",
     "hallucination_check": {"gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}, "claude-sonnet-4": {"final_result": {"conflict": 0, "baseless_info": 0}}},
-    "token_length_qwen3": 6108,
+    "token_length_qwen3": 56108,
     "dialogue_structure": {
       "participants": ["律师A", "律师B"],
       "total_turns": 3
@@ -251,7 +251,7 @@
     "answer": "云浮市2024年重点推进数字政府建设：政务服务全程网办率目标80%以上，电子公文办结率98%以上，并打造新型电子政务外网。",
     "topic": "政府文件（数字化转型）",
     "hallucination_check": {"gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}, "claude-sonnet-4": {"final_result": {"conflict": 0, "baseless_info": 0}}},
-    "token_length_qwen3": 4848,
+    "token_length_qwen3": 848,
     "dialogue_structure": null
   }
 ]
