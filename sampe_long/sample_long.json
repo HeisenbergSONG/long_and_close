@@ -344,7 +344,7 @@
     "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
     "id": "EN-7-Report-5",
     "nference_hops": 3,
-    "estimated_tokens": 8258,
+    "estimated_tokens": 81258,
     "passrate_M": 6,
     "passrate_N": 20
   },
@@ -388,7 +388,7 @@
     "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
     "id": "ZH-10-Code-2",
     "nference_hops": 3,
-    "estimated_tokens": 10221,
+    "estimated_tokens": 68754,
     "passrate_M": 7,
     "passrate_N": 20
   },
@@ -410,7 +410,7 @@
     "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
     "id": "EN-8-Code-3",
     "nference_hops": 3,
-    "estimated_tokens": 10218,
+    "estimated_tokens": 75432,
     "passrate_M": 8,
     "passrate_N": 20
   },
