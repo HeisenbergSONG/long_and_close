@@ -2,10 +2,9 @@
   {
     "question": "According to the full narrative, Nadina claims she holds evidence that can threaten the 'Colonel' (Sir Eustace Pedler). What exactly is this evidence? Please explain how she obtained it and what she plans to demand from the 'Colonel' using this evidence?",
     "context": ".\\THE MAN IN THE BROWN SUIT褐衣男子.txt",
-    "gt": "Nadina holds some of the South American sample diamonds that she secretly kept during the De Beers diamond substitution case (one or two of which are unique and can prove they never passed through De Beers). She obtained them by secretly retaining these South American diamonds while executing the substitution plan arranged by the 'Colonel'. She plans to use this evidence to extort a large sum of money from the 'Colonel' (a staggering price).",
     "answer": "Nadina holds some of the South American sample diamonds that she secretly kept during the De Beers diamond substitution case (one or two of which are unique and can prove they never passed through De Beers). She obtained them by secretly retaining these South American diamonds while executing the substitution plan arranged by the 'Colonel'. She plans to use this evidence to extort a large sum of money from the 'Colonel' (a staggering price).",
     "language": "en",
-    "domain_label": "Novel Plot Reasoning (Detective Novel)",
+    "domain_label": "Novel",
     "clues": {
       "positive": [
         "[Prologue] Nadina: “I kept back some of the South American stones — one or two are unique... They can be identified.”",
@@ -17,15 +16,19 @@
     },
     "reasoning": "Step 1: Extract Nadina’s claim of having leverage over the Colonel from her conversation with the Count in the Prologue.\nStep 2: Identify the leverage as the unique South American sample diamonds she secretly kept during the De Beers substitution plan.\nStep 3: The uniqueness of these diamonds (identifiable origin) makes them a blackmail tool targeting a 'staggering price'.\nStep 4: Later chapters (XXVII and XXXII) through Harry’s and Sir Eustace’s accounts confirm the plan and the Colonel’s identity, forming a closed loop.",
     "pass_rate": 0.45,
-    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro"
+    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
+    "id": "EN-1-Novel-1",
+    "nference_hops": 4,
+    "estimated_tokens": 652,
+    "passrate_M": 9,
+    "passrate_N": 20
   },
   {
     "question": "哈里（Harry）在故事中使用的化名是“Harry Lucas”，但他的真实身份是谁？请说明瑞斯上校（Colonel Race）是如何确认哈里真实身份的，以及为什么纳迪娜在见到“复活的卢卡斯”时会感到极度恐惧？",
     "context": ".\\THE MAN IN THE BROWN SUIT褐衣男子.txt",
-    "gt": "哈里的真实身份是John Harold Eardsley（约翰·哈罗德·厄茨利，劳伦斯·厄茨利爵士的儿子）。瑞斯上校是通过小时候见过哈里一次、并且永不忘记面孔的能力确认的（“I never forget a face. I saw you once as a boy”）。纳迪娜会恐惧是因为她知道真正的Harry Lucas脾气火爆、性格强硬（the devil’s own temper），而安静的Lucas她不怕；如果知道是脾气暴躁的Eardsley“复活”，她会吓得半死。",
     "answer": "哈里的真实身份是John Harold Eardsley（约翰·哈罗德·厄茨利，劳伦斯·厄茨利爵士的儿子）。瑞斯上校是通过小时候见过哈里一次、并且永不忘记面孔的能力确认的（“I never forget a face. I saw you once as a boy”）。纳迪娜会恐惧是因为她知道真正的Harry Lucas脾气火爆、性格强硬（the devil’s own temper），而安静的Lucas她不怕；如果知道是脾气暴躁的Eardsley“复活”，她会吓得半死。",
     "language": "zh",
-    "domain_label": "小说情节推理（侦探类小说）",
+    "domain_label": "Novel",
     "clues": {
       "positive": [
         "[Chapter XXXII] Race: “I never forget a face. I saw you once as a boy.” 确认Harry为John Harold Eardsley",
@@ -35,17 +38,21 @@
       ],
       "negative": []
     },
-    "reasoning": "跳1：Race在结局直接揭露Harry真实姓名与交换身份事实。\n跳2：Race说明自己通过小时候见过一次面孔并永不忘记的能力确认身份。\n跳3：结合Prologue中Nadina对Harry Lucas性格的描述（火爆脾气），对比她见到“复活的Lucas”时的恐惧反应，推理出她真正害怕的是Eardsley本人。",
+    "reasoning": "Step 1：Race在结局直接揭露Harry真实姓名与交换身份事实。\nStep 2：Race说明自己通过小时候见过一次面孔并永不忘记的能力确认身份。\nStep 3：结合Prologue中Nadina对Harry Lucas性格的描述（火爆脾气），对比她见到“复活的Lucas”时的恐惧反应，推理出她真正害怕的是Eardsley本人。",
     "pass_rate": 0.35,
-    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro"
+    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
+    "id": "ZH-1-Novel-2",
+    "nference_hops": 3,
+    "estimated_tokens": 478,
+    "passrate_M": 7,
+    "passrate_N": 20
   },
   {
     "question": "In the entire story, Nadina claims that the only man she has ever feared is already dead from the war, but who is ultimately revealed to be this 'only man she ever feared'? Please explain, combining Nadina’s feelings toward this man and the story’s ending, why this information is crucial to understanding her behavior.",
     "context": ".\\THE MAN IN THE BROWN SUIT褐衣男子.txt",
-    "gt": "The only man Nadina ever feared is Harry Lucas (i.e., the real Harry Eardsley). In the prologue she says: “There is only one man I have ever feared—and he is dead.” She mentions he once loved her in South Africa. In reality, Harry Eardsley is alive and appears as Lucas. This is crucial because Nadina’s betrayal, diamond retention, and blackmail were based on the false premise that the man she deeply feared was dead; once she realizes he is alive, her behavior foundation collapses and she faces extreme fear when confronting the 'resurrected Lucas'.",
     "answer": "The only man Nadina ever feared is Harry Lucas (i.e., the real Harry Eardsley). In the prologue she says: “There is only one man I have ever feared—and he is dead.” She mentions he once loved her in South Africa. In reality, Harry Eardsley is alive and appears as Lucas. This is crucial because Nadina’s betrayal, diamond retention, and blackmail were based on the false premise that the man she deeply feared was dead; once she realizes he is alive, her behavior foundation collapses and she faces extreme fear when confronting the 'resurrected Lucas'.",
     "language": "en",
-    "domain_label": "Novel Plot Reasoning (Detective Novel)",
+    "domain_label": "Novel",
     "clues": {
       "positive": [
         "[Prologue] Nadina: “There is only one man I have ever feared—and he is dead... He was a man who once—loved me.” (South Africa)",
@@ -56,15 +63,19 @@
     },
     "reasoning": "Step 1: In the Prologue, Nadina states that the only man she ever feared died in the war and once loved her in South Africa.\nStep 2: The ending reveals Harry’s true identity as Eardsley (i.e., Harry Lucas).\nStep 3: Nadina’s blackmail behavior depends on the premise that he is dead; this information explains the root of her fear and her motivation.",
     "pass_rate": 0.25,
-    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro"
+    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
+    "id": "EN-2-Novel-3",
+    "nference_hops": 3,
+    "estimated_tokens": 638,
+    "passrate_M": 5,
+    "passrate_N": 20
   },
   {
     "question": "为什么安妮（Anne）最后选择和哈里一起返回岛上、放弃厄茨利家族的巨额财富？请从安妮和哈里各自的心理动机，以及他们对财富的态度两个层面说明。",
     "context": ".\\THE MAN IN THE BROWN SUIT褐衣男子.txt",
-    "gt": "安妮的动机：她真正爱的是哈里本人，而不是财富；她讨厌离开非洲，觉得巴黎长裙、伦敦生活不真实，内心向往岛上的简单生活；她也认同“蜜月”比物质更重要。哈里的动机：他恐惧财富带来的腐化（it nearly rotted me through once），害怕上流社会生活，宁愿过原始岛屿生活；他害怕失去安妮，不信任那种生活会让他们幸福。两人共同态度：他们都认为钱买不到幸福（What’s the good of money? It can’t buy happiness.），宁愿做“疯子”也要一起过简单生活。",
     "answer": "安妮的动机：她真正爱的是哈里本人，而不是财富；她讨厌离开非洲，觉得巴黎长裙、伦敦生活不真实，内心向往岛上的简单生活；她也认同“蜜月”比物质更重要。哈里的动机：他恐惧财富带来的腐化（it nearly rotted me through once），害怕上流社会生活，宁愿过原始岛屿生活；他害怕失去安妮，不信任那种生活会让他们幸福。两人共同态度：他们都认为钱买不到幸福（What’s the good of money? It can’t buy happiness.），宁愿做“疯子”也要一起过简单生活。",
     "language": "zh",
-    "domain_label": "小说情节推理（侦探类小说）",
+    "domain_label": "Novel",
     "clues": {
       "positive": [
         "[结局章节] Harry: “It nearly rotted me through once... I’m afraid of the money.”",
@@ -73,17 +84,21 @@
       ],
       "negative": []
     },
-    "reasoning": "跳1：Harry明确表达对财富腐化的恐惧并强行带走Anne。\n跳2：Anne表面调侃，内心实际渴望去岛上（I wanted to come!）。\n跳3：两人共同价值观——钱买不到幸福，宁愿选择爱情与简单生活。",
+    "reasoning": "Step 1：Harry明确表达对财富腐化的恐惧并强行带走Anne。\nStep 2：Anne表面调侃，内心实际渴望去岛上（I wanted to come!）。\nStep 3：两人共同价值观——钱买不到幸福，宁愿选择爱情与简单生活。",
     "pass_rate": 0.55,
-    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro"
+    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
+    "id": "ZH-2-Novel-4",
+    "nference_hops": 3,
+    "estimated_tokens": 435,
+    "passrate_M": 11,
+    "passrate_N": 20
   },
   {
     "question": "After escaping, Sir Eustace Pedler writes a letter to Anne mentioning that he sent a silver cup to Pagett’s child and volunteered to be the godfather. Combining this with the entire book, explain why this action would be a great shock or annoyance (nasty jar) to Pagett, and why Pedler deliberately did it despite knowing so.",
     "context": ".\\THE MAN IN THE BROWN SUIT褐衣男子.txt",
-    "gt": "Pagett is an extremely rigid, upright, and rule-abiding civil servant who deeply despises Pedler’s criminal behavior and has repeatedly tried to expose him. By sending the silver cup and offering to be godfather, Pedler puts Pagett in a severe moral dilemma and humiliation: Pagett must decide whether to hand the gift and postcard directly to Scotland Yard (as evidence/provocation) or accept a criminal as his child’s godfather—both options are embarrassing. Pedler does this deliberately as a prank, revenge, and to showcase his 'Christian tolerance' while continuing to torment Pagett, enjoying the sight of Pagett’s distress (give him a nasty jar).",
     "answer": "Pagett is an extremely rigid, upright, and rule-abiding civil servant who deeply despises Pedler’s criminal behavior and has repeatedly tried to expose him. By sending the silver cup and offering to be godfather, Pedler puts Pagett in a severe moral dilemma and humiliation: Pagett must decide whether to hand the gift and postcard directly to Scotland Yard (as evidence/provocation) or accept a criminal as his child’s godfather—both options are embarrassing. Pedler does this deliberately as a prank, revenge, and to showcase his 'Christian tolerance' while continuing to torment Pagett, enjoying the sight of Pagett’s distress (give him a nasty jar).",
     "language": "en",
-    "domain_label": "Novel Plot Reasoning (Detective Novel)",
+    "domain_label": "Novel",
     "clues": {
       "positive": [
         "[Sir Eustace’s letter] “I have sent a silver cup to Pagett’s child and offered to be godfather.”",
@@ -93,17 +108,20 @@
       "negative": []
     },
     "reasoning": "Step 1: In the letter, Pedler explicitly mentions sending the silver cup and volunteering as godfather.\nStep 2: Pagett’s personality is extremely upright and he hates Pedler.\nStep 3: No matter how Pagett handles the gift, he faces a moral dilemma → Pedler intentionally creates this psychological torment.",
-    "pass_rate": 0.40,
-    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro"
+    "pass_rate": 0.4,
+    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
+    "id": "EN-3-Novel-5",
+    "nference_hops": 3,
+    "estimated_tokens": 669,
+    "passrate_M": 8,
+    "passrate_N": 20
   },
-
   {
     "question": "根据判决书认定的事实，王某向刘某主张的借款本金为多少？法院最终支持的剩余本金是多少？利息计算标准是什么？请计算从2000年12月20日至2001年12月20日期间，法院判决刘某应支付的利息总额（按判决支持的标准）。",
     "context": ".\\2001年05月裁判文书数据.txt",
-    "gt": "王某主张本金10万元，法院认定剩余本金为8万元（已归还2万元）。法院支持的利息计算标准为银行同期贷款利率的4倍。从2000年12月20日至2001年12月20日（共1年），利息总额为银行同期贷款利率×4×8万元。",
     "answer": "王某主张本金10万元，法院认定剩余本金为8万元（已归还2万元）。法院支持的利息计算标准为银行同期贷款利率的4倍。从2000年12月20日至2001年12月20日（共1年），利息总额为银行同期贷款利率×4×8万元。",
     "language": "zh",
-    "domain_label": "法律（条款理解、法律案例判断与推理等）",
+    "domain_label": "Legal",
     "clues": {
       "positive": [
         "借条记载借款10万元",
@@ -114,18 +132,21 @@
       ],
       "negative": []
     },
-    "reasoning": "跳1：借条本金10万元 - 已归还2万元 = 剩余本金8万元。\n跳2：约定月息2分（年利率24%）超过最高人民法院规定的银行同期贷款利率4倍上限。\n跳3：法院判决利息按银行同期贷款利率的4倍计算，期限为借款日至约定还款日（2000.12.20-2001.12.20，共1年）。",
-    "pass_rate": 0.40,
-    "LLM": "Qwen-3 / GPT-4o"
+    "reasoning": "Step 1：借条本金10万元 - 已归还2万元 = 剩余本金8万元。\nStep 2：约定月息2分（年利率24%）超过最高人民法院规定的银行同期贷款利率4倍上限。\nStep 3：法院判决利息按银行同期贷款利率的4倍计算，期限为借款日至约定还款日（2000.12.20-2001.12.20，共1年）。",
+    "pass_rate": 0.4,
+    "LLM": "Qwen-3 / GPT-4o",
+    "id": "ZH-3-Legal-1",
+    "nference_hops": 3,
+    "estimated_tokens": 345,
+    "passrate_M": 8,
+    "passrate_N": 20
   },
-
   {
     "question": "本案借条约定月利率为2分（年利率24%），但法院未予支持。请说明法院不支持该约定利率的原因，并指出法院最终适用的具体法律依据是什么。",
     "context": ".\\2001年05月裁判文书数据.txt",
-    "gt": "法院不支持约定利率的原因是该利率超过了最高人民法院《关于人民法院审理借贷案件的若干意见》中规定的民间借贷利率最高不得超过银行同期贷款利率4倍的上限。法院最终适用的是最高人民法院《关于人民法院审理借贷案件的若干意见》关于利率保护上限的规定。",
     "answer": "法院不支持约定利率的原因是该利率超过了最高人民法院《关于人民法院审理借贷案件的若干意见》中规定的民间借贷利率最高不得超过银行同期贷款利率4倍的上限。法院最终适用的是最高人民法院《关于人民法院审理借贷案件的若干意见》关于利率保护上限的规定。",
     "language": "zh",
-    "domain_label": "法律（条款理解、法律案例判断与推理等）",
+    "domain_label": "Legal",
     "clues": {
       "positive": [
         "借条约定月利率2分（年利率24%）",
@@ -135,18 +156,21 @@
       ],
       "negative": []
     },
-    "reasoning": "跳1：借条明确约定月利率2分（年利率24%）。\n跳2：24%超过最高人民法院《关于人民法院审理借贷案件的若干意见》规定的上限（银行同期贷款利率的4倍）。\n跳3：法院引用该司法解释，并适用4倍上限计算利息。",
+    "reasoning": "Step 1：借条明确约定月利率2分（年利率24%）。\nStep 2：24%超过最高人民法院《关于人民法院审理借贷案件的若干意见》规定的上限（银行同期贷款利率的4倍）。\nStep 3：法院引用该司法解释，并适用4倍上限计算利息。",
     "pass_rate": 0.35,
-    "LLM": "Qwen-3 / GPT-4o"
+    "LLM": "Qwen-3 / GPT-4o",
+    "id": "ZH-4-Legal-2",
+    "nference_hops": 3,
+    "estimated_tokens": 347,
+    "passrate_M": 7,
+    "passrate_N": 20
   },
-
   {
     "question": "王某要求刘某支付从2000年12月20日起至实际还款之日的全部利息，但法院仅支持至2001年12月20日。请说明法院支持的利息起止时间，以及不支持更长时间利息的原因。",
     "context": ".\\2001年05月裁判文书数据.txt",
-    "gt": "法院支持的利息起止时间为2000年12月20日至2001年12月20日。法院不支持更长时间利息的原因是：借条约定的还款日期为2001年12月20日，法院以合同约定的还款截止日作为利息计算终止日。",
     "answer": "法院支持的利息起止时间为2000年12月20日至2001年12月20日。法院不支持更长时间利息的原因是：借条约定的还款日期为2001年12月20日，法院以合同约定的还款截止日作为利息计算终止日。",
     "language": "zh",
-    "domain_label": "法律（条款理解、法律案例判断与推理等）",
+    "domain_label": "Legal",
     "clues": {
       "positive": [
         "借款日期：2000年12月20日",
@@ -156,17 +180,21 @@
       ],
       "negative": []
     },
-    "reasoning": "跳1：借条约定借款日为2000.12.20，还款日为2001.12.20。\n跳2：原告要求计算至实际还款日。\n跳3：法院判决明确将利息计算截止于借条约定的还款日期2001.12.20。",
+    "reasoning": "Step 1：借条约定借款日为2000.12.20，还款日为2001.12.20。\nStep 2：原告要求计算至实际还款日。\nStep 3：法院判决明确将利息计算截止于借条约定的还款日期2001.12.20。",
     "pass_rate": 0.45,
-    "LLM": "Qwen-3 / GPT-4o"
+    "LLM": "Qwen-3 / GPT-4o",
+    "id": "ZH-5-Legal-3",
+    "nference_hops": 3,
+    "estimated_tokens": 301,
+    "passrate_M": 9,
+    "passrate_N": 20
   },
   {
     "question": "The IOU in this case agreed on a monthly interest rate of 2 fen (annual interest rate 24%), but the court did not support it. Please explain why the court did not support the agreed interest rate and what specific legal basis the court ultimately applied.",
     "context": ".\\2001年05月裁判文书数据.txt",
-    "gt": "The court did not support the agreed interest rate because it exceeded the upper limit stipulated in the Supreme People's Court's Opinions on Several Issues Concerning the Trial of Loan Cases, which states that the interest rate for private loans shall not exceed four times the同期 bank loan interest rate. The court ultimately applied the Supreme People's Court's Opinions on Several Issues Concerning the Trial of Loan Cases regarding the interest rate protection ceiling.",
     "answer": "The court did not support the agreed interest rate because it exceeded the upper limit stipulated in the Supreme People's Court's Opinions on Several Issues Concerning the Trial of Loan Cases, which states that the interest rate for private loans shall not exceed four times the同期 bank loan interest rate. The court ultimately applied the Supreme People's Court's Opinions on Several Issues Concerning the Trial of Loan Cases regarding the interest rate protection ceiling.",
     "language": "en",
-    "domain_label": "Legal (Clause Understanding, Case Judgment and Reasoning)",
+    "domain_label": "Legal",
     "clues": {
       "positive": [
         "The IOU agreed on a monthly interest rate of 2 fen (annual 24%)",
@@ -178,16 +206,19 @@
     },
     "reasoning": "Step 1: The IOU explicitly agreed on a monthly interest rate of 2 fen (annual 24%).\nStep 2: This exceeded the upper limit in the Supreme People's Court's 1991 Opinions (private loan interest shall not exceed 4 times the bank同期 loan interest rate).\nStep 3: The court quoted this judicial opinion and applied the 4 times limit as the protected ceiling.",
     "pass_rate": 0.35,
-    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro"
+    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
+    "id": "EN-4-Legal-4",
+    "nference_hops": 3,
+    "estimated_tokens": 589,
+    "passrate_M": 7,
+    "passrate_N": 20
   },
-
   {
     "question": "According to the facts determined in the judgment, what is the remaining principal that Liu owes to Wang? What interest calculation standard did the court ultimately support? Please calculate the total interest that Liu should pay from December 20, 2000 to December 20, 2001 (1 full year) according to the court's supported standard.",
     "context": ".\\2001年05月裁判文书数据.txt",
-    "gt": "The remaining principal is 80,000 yuan (original loan of 100,000 yuan minus 20,000 yuan already repaid). The court supported interest at 4 times the bank同期 loan interest rate. The total interest payable for the period from December 20, 2000 to December 20, 2001 (1 year) is bank同期 loan interest rate × 4 × 80,000 yuan.",
     "answer": "The remaining principal is 80,000 yuan (original loan of 100,000 yuan minus 20,000 yuan already repaid). The court supported interest at 4 times the bank同期 loan interest rate. The total interest payable for the period from December 20, 2000 to December 20, 2001 (1 year) is bank同期 loan interest rate × 4 × 80,000 yuan.",
     "language": "en",
-    "domain_label": "Legal (Clause Understanding, Case Judgment and Reasoning)",
+    "domain_label": "Legal",
     "clues": {
       "positive": [
         "The IOU records a loan of 100,000 yuan",
@@ -199,15 +230,20 @@
       "negative": []
     },
     "reasoning": "Step 1: Original loan 100,000 yuan - repaid 20,000 yuan = remaining principal 80,000 yuan.\nStep 2: Agreed monthly rate 2 fen (annual 24%) exceeds the Supreme People's Court limit of 4 times bank同期 loan interest rate.\nStep 3: The court applied the statutory upper limit of 4 times the bank同期 loan interest rate for the period from borrowing date to agreed repayment date (1 full year).",
-    "pass_rate": 0.40,
-    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro"
+    "pass_rate": 0.4,
+    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
+    "id": "EN-5-Legal-5",
+    "nference_hops": 3,
+    "estimated_tokens": 543,
+    "passrate_M": 8,
+    "passrate_N": 20
   },
-
   {
     "question": "根据报告，2023年云浮市GDP为1582.3亿元，同比增长5.8%；其中工业增加值同比增长7.2%，占GDP比重为42.6%；2024年预期GDP增长目标为6.0%以上。请问2024年要实现预期目标，需要工业增加值至少增长多少个百分点才能在产业结构不变的情况下拉动整体GDP增长达到目标？（需结合工业占比进行计算）",
     "context": ".\\云浮市2024.txt",
     "answer": "工业增加值至少需要增长约9.1个百分点",
     "language": "zh",
+    "domain_label": "Report",
     "clues": {
       "positive": [
         "2023年主要经济指标及工业增加值占比段落",
@@ -215,15 +251,21 @@
       ],
       "negative": []
     },
-    "domain": ["其他文本理解", "政府文件"],
-    "reasoning_process": "第一步：提取2023年工业增加值对GDP的贡献权重（42.6%）；第二步：计算工业增长对整体GDP的拉动作用；第三步：反推工业需增长的百分点以支撑6.0%以上的总体目标。",
-    "pass_rate": 0.45
+    "reasoning": "第一步：提取2023年工业增加值对GDP的贡献权重（42.6%）；第二步：计算工业增长对整体GDP的拉动作用；第三步：反推工业需增长的百分点以支撑6.0%以上的总体目标。",
+    "pass_rate": 0.45,
+    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
+    "id": "ZH-6-Report-1",
+    "nference_hops": 3,
+    "estimated_tokens": 218,
+    "passrate_M": 9,
+    "passrate_N": 20
   },
   {
     "question": "报告指出2023年云浮市农村居民人均可支配收入为19876元，同比增长8.1%；脱贫户人均收入增长11.3%；2024年计划实施乡村振兴项目185个，计划新增农村就业岗位1.2万个。如果要使2024年农村居民人均收入增长不低于9.5%，且脱贫户收入继续保持高于整体农村收入增长2个百分点以上，请问2024年脱贫户人均收入至少需要达到多少元？",
     "context": ".\\云浮市2024.txt",
     "answer": "至少达到23250元",
     "language": "zh",
+    "domain_label": "Report",
     "clues": {
       "positive": [
         "2023年农村居民及脱贫户收入数据及增长率段落",
@@ -231,15 +273,21 @@
       ],
       "negative": []
     },
-    "domain": ["其他文本理解", "政府文件"],
-    "reasoning_process": "第一步：根据9.5%增长率计算2024年农村居民人均收入目标值；第二步：脱贫户增长率需比整体高2个百分点，即至少11.5%；第三步：基于2023年脱贫户基数计算具体金额。",
-    "pass_rate": 0.35
+    "reasoning": "第一步：根据9.5%增长率计算2024年农村居民人均收入目标值；第二步：脱贫户增长率需比整体高2个百分点，即至少11.5%；第三步：基于2023年脱贫户基数计算具体金额。",
+    "pass_rate": 0.35,
+    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
+    "id": "ZH-7-Report-2",
+    "nference_hops": 3,
+    "estimated_tokens": 220,
+    "passrate_M": 7,
+    "passrate_N": 20
   },
   {
     "question": "2023年云浮市固定资产投资完成1286亿元，同比增长12.4%，其中西江新城等重点项目完成投资占比38%；2024年计划固定资产投资增长15%以上，且重点项目投资占比需提升至42%。请问2024年重点项目投资额至少需要达到多少亿元才能满足规划？",
     "context": ".\\云浮市2024.txt",
     "answer": "至少达到约810亿元",
     "language": "zh",
+    "domain_label": "Report",
     "clues": {
       "positive": [
         "2023年固定资产投资完成额及重点项目占比段落",
@@ -247,15 +295,21 @@
       ],
       "negative": []
     },
-    "domain": ["其他文本理解", "政府文件"],
-    "reasoning_process": "第一步：计算2024年固定资产投资总额目标（1286 × (1 + 15%) ≈ 1478.9亿元）；第二步：应用重点项目占比提升至42%；第三步：得出重点项目最低投资额。",
-    "pass_rate": 0.50
+    "reasoning": "第一步：计算2024年固定资产投资总额目标（1286 × (1 + 15%) ≈ 1478.9亿元）；第二步：应用重点项目占比提升至42%；第三步：得出重点项目最低投资额。",
+    "pass_rate": 0.5,
+    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
+    "id": "ZH-8-Report-3",
+    "nference_hops": 3,
+    "estimated_tokens": 201,
+    "passrate_M": 10,
+    "passrate_N": 20
   },
   {
     "question": "According to the report, in 2023 Yunfu's tertiary industry grew by 6.8% and accounted for 51.2% of GDP, while the secondary industry grew by 7.2%. If the city aims for an overall GDP growth of 6.0% or higher in 2024 while maintaining similar industry weights, what is the minimum growth rate required for the tertiary industry to achieve the target?",
     "context": ".\\云浮市2024.txt",
     "answer": "At least 6.3%",
     "language": "en",
+    "domain_label": "Report",
     "clues": {
       "positive": [
         "2023 industry growth rates and GDP proportions section",
@@ -263,15 +317,21 @@
       ],
       "negative": []
     },
-    "domain": ["Other text understanding", "Government document"],
-    "reasoning_process": "Step 1: Extract 2023 weights and growth rates. Step 2: Calculate weighted contribution to GDP growth. Step 3: Solve for the minimum tertiary industry growth needed to reach ≥6.0% overall.",
-    "pass_rate": 0.40
+    "reasoning": "Step 1: Extract 2023 weights and growth rates. Step 2: Calculate weighted contribution to GDP growth. Step 3: Solve for the minimum tertiary industry growth needed to reach ≥6.0% overall.",
+    "pass_rate": 0.4,
+    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
+    "id": "EN-6-Report-4",
+    "nference_hops": 3,
+    "estimated_tokens": 244,
+    "passrate_M": 8,
+    "passrate_N": 20
   },
   {
     "question": "The report states that in 2023, 18,500 new urban jobs were created and rural labor transfer employment reached 124,000 people. In 2024, the plan is to create 20,000 new urban jobs and increase rural employment transfer by 8%. If the goal is to reduce the urban-rural income gap by at least 1.2 percentage points, what is the implied minimum rural employment transfer number needed?",
     "context": ".\\云浮市2024.txt",
     "answer": "At least 134,000 people",
     "language": "en",
+    "domain_label": "Report",
     "clues": {
       "positive": [
         "2023 employment statistics and rural labor transfer data section",
@@ -279,16 +339,21 @@
       ],
       "negative": []
     },
-    "domain": ["Other text understanding", "Government document"],
-    "reasoning_process": "Step 1: Start from 2023 rural transfer baseline (124,000). Step 2: Apply the 8% increase plan. Step 3: Adjust upward to meet the additional income gap narrowing requirement.",
-    "pass_rate": 0.30
+    "reasoning": "Step 1: Start from 2023 rural transfer baseline (124,000). Step 2: Apply the 8% increase plan. Step 3: Adjust upward to meet the additional income gap narrowing requirement.",
+    "pass_rate": 0.3,
+    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
+    "id": "EN-7-Report-5",
+    "nference_hops": 3,
+    "estimated_tokens": 258,
+    "passrate_M": 6,
+    "passrate_N": 20
   },
-
   {
     "question": "在代码中，函数 E 用于解析 HTML 标签的属性字符串。如果输入的属性字符串是 `class=\"active\" id = \"main\" data-type='user' `（注意有空格和不同引号），请问函数最终返回的字符串是什么样的？请说明解析的关键步骤。",
     "context": ".\\code2.txt",
     "answer": "class=\"active\" id=\"main\" data-type=\"user\"",
     "language": "zh",
+    "domain_label": "Code",
     "clues": {
       "positive": [
         "E 函数中处理空格和等号的逻辑：遇到空格时查找下一个 = 号位置",
@@ -296,15 +361,21 @@
       ],
       "negative": []
     },
-    "domain": ["工程代码理解"],
-    "reasoning_process": "第一步：逐字符扫描，遇到 = 号后确定属性名；第二步：识别引号（双引号或单引号）并提取值，去掉引号并 trim；第三步：所有键值对以空格拼接成最终属性字符串。",
-    "pass_rate": 0.40
+    "reasoning": "第一步：逐字符扫描，遇到 = 号后确定属性名；第二步：识别引号（双引号或单引号）并提取值，去掉引号并 trim；第三步：所有键值对以空格拼接成最终属性字符串。",
+    "pass_rate": 0.4,
+    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
+    "id": "ZH-9-Code-1",
+    "nference_hops": 3,
+    "estimated_tokens": 215,
+    "passrate_M": 8,
+    "passrate_N": 20
   },
   {
     "question": "代码中的 w 函数对不同属性有特殊过滤逻辑。如果一个 background 属性值是 `url(javascript:alert(1))`，或者 style 属性包含 `expression(alert(1))`，请问 w 函数会返回什么？为什么会这样处理？",
     "context": ".\\code2.txt",
     "answer": "返回空字符串 \"\"，因为检测到 javascript: 协议或 expression 表达式，属于 XSS 风险",
     "language": "zh",
+    "domain_label": "Code",
     "clues": {
       "positive": [
         "w 函数中 background 的检测：u.test(n) 检查 javascript: 协议",
@@ -312,15 +383,21 @@
       ],
       "negative": []
     },
-    "domain": ["工程代码理解"],
-    "reasoning_process": "第一步：判断属性名是否为 background 或 style；第二步：对 background 用 u 正则检测 javascript: 协议；第三步：对 style 用 d、h、u 组合检测 expression 或危险 url，满足任一条件返回空字符串。",
-    "pass_rate": 0.35
+    "reasoning": "第一步：判断属性名是否为 background 或 style；第二步：对 background 用 u 正则检测 javascript: 协议；第三步：对 style 用 d、h、u 组合检测 expression 或危险 url，满足任一条件返回空字符串。",
+    "pass_rate": 0.35,
+    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
+    "id": "ZH-10-Code-2",
+    "nference_hops": 3,
+    "estimated_tokens": 221,
+    "passrate_M": 7,
+    "passrate_N": 20
   },
   {
     "question": "In the code, there is a function called basename that handles file paths. For the path string '/assets/scripts/bundle.70679.268f5fe8.min.js' and extension '.min.js', what does basename return? Describe the key steps in the logic.",
     "context": ".\\code2.txt",
     "answer": "bundle.70679.268f5fe8",
     "language": "en",
+    "domain_label": "Code",
     "clues": {
       "positive": [
         "basename function: finds the last '/' to get filename",
@@ -328,15 +405,21 @@
       ],
       "negative": []
     },
-    "domain": ["Engineering code understanding"],
-    "reasoning_process": "Step 1: Locate the last path separator '/'. Step 2: Extract the filename after it. Step 3: Check if the extension matches the end of the filename and remove it if it does.",
-    "pass_rate": 0.38
+    "reasoning": "Step 1: Locate the last path separator '/'. Step 2: Extract the filename after it. Step 3: Check if the extension matches the end of the filename and remove it if it does.",
+    "pass_rate": 0.38,
+    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
+    "id": "EN-8-Code-3",
+    "nference_hops": 3,
+    "estimated_tokens": 218,
+    "passrate_M": 8,
+    "passrate_N": 20
   },
   {
     "question": "The code includes a function w for sanitizing attribute values. If an 'href' attribute is set to 'javascript:alert(document.cookie)', what does w return, and which part of the code causes this behavior?",
     "context": ".\\code2.txt",
     "answer": "It returns an empty string \"\" because 'javascript:' protocol is not in the allowed list (http, https, mailto, tel, data:image, ftp, ./, ../, #, /)",
     "language": "en",
+    "domain_label": "Code",
     "clues": {
       "positive": [
         "In w function, for 'href' or 'src': checks if value starts with allowed protocols",
@@ -344,15 +427,21 @@
       ],
       "negative": []
     },
-    "domain": ["Engineering code understanding"],
-    "reasoning_process": "Step 1: Identify that the attribute is 'href'. Step 2: Check prefix against allowed protocols list. Step 3: Since 'javascript:' is not allowed, return empty string to prevent XSS.",
-    "pass_rate": 0.42
+    "reasoning": "Step 1: Identify that the attribute is 'href'. Step 2: Check prefix against allowed protocols list. Step 3: Since 'javascript:' is not allowed, return empty string to prevent XSS.",
+    "pass_rate": 0.42,
+    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
+    "id": "EN-9-Code-4",
+    "nference_hops": 3,
+    "estimated_tokens": 240,
+    "passrate_M": 8,
+    "passrate_N": 20
   },
   {
     "question": "In the provided code, the function _ (HTML parser) calls E to process attributes when a tag is in the whiteList. If a tag has attributes like `onclick=\"alert(1)\" data-safe=\"true\"`, and onclick is not in the whiteList for that tag, what will the final tag string look like after processing? Explain the flow.",
     "context": ".\\code2.txt",
     "answer": "The onclick attribute will be removed, and only safe attributes (if any are whitelisted) will remain; potentially resulting in something like <tag data-safe=\"true\">",
     "language": "en",
+    "domain_label": "Code",
     "clues": {
       "positive": [
         "In _ function, when tag is white-listed, attributes are processed via E(a.html, callback)",
@@ -360,9 +449,13 @@
       ],
       "negative": []
     },
-    "domain": ["Engineering code understanding"],
-    "reasoning_process": "Step 1: Tag is white-listed → enter attribute processing branch. Step 2: Each attribute is checked against whiteList for that tag. Step 3: Dangerous attributes like onclick are not whitelisted → removed from output.",
-    "pass_rate": 0.45
+    "reasoning": "Step 1: Tag is white-listed → enter attribute processing branch. Step 2: Each attribute is checked against whiteList for that tag. Step 3: Dangerous attributes like onclick are not whitelisted → removed from output.",
+    "pass_rate": 0.45,
+    "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
+    "id": "EN-10-Code-5",
+    "nference_hops": 3,
+    "estimated_tokens": 300,
+    "passrate_M": 9,
+    "passrate_N": 20
   }
-
 ]
