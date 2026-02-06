@@ -19,7 +19,7 @@
     "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
     "id": "EN-1-Novel-1",
     "nference_hops": 4,
-    "estimated_tokens": 652,
+    "estimated_tokens": 68542,
     "passrate_M": 9,
     "passrate_N": 20
   },
@@ -43,7 +43,7 @@
     "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
     "id": "ZH-1-Novel-2",
     "nference_hops": 3,
-    "estimated_tokens": 478,
+    "estimated_tokens": 48758,
     "passrate_M": 7,
     "passrate_N": 20
   },
@@ -66,7 +66,7 @@
     "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
     "id": "EN-2-Novel-3",
     "nference_hops": 3,
-    "estimated_tokens": 638,
+    "estimated_tokens": 66658,
     "passrate_M": 5,
     "passrate_N": 20
   },
@@ -89,7 +89,7 @@
     "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
     "id": "ZH-2-Novel-4",
     "nference_hops": 3,
-    "estimated_tokens": 435,
+    "estimated_tokens": 113765,
     "passrate_M": 11,
     "passrate_N": 20
   },
@@ -112,7 +112,7 @@
     "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
     "id": "EN-3-Novel-5",
     "nference_hops": 3,
-    "estimated_tokens": 669,
+    "estimated_tokens": 86697,
     "passrate_M": 8,
     "passrate_N": 20
   },
@@ -137,7 +137,7 @@
     "LLM": "Qwen-3 / GPT-4o",
     "id": "ZH-3-Legal-1",
     "nference_hops": 3,
-    "estimated_tokens": 345,
+    "estimated_tokens": 93456,
     "passrate_M": 8,
     "passrate_N": 20
   },
@@ -161,7 +161,7 @@
     "LLM": "Qwen-3 / GPT-4o",
     "id": "ZH-4-Legal-2",
     "nference_hops": 3,
-    "estimated_tokens": 347,
+    "estimated_tokens": 103475,
     "passrate_M": 7,
     "passrate_N": 20
   },
@@ -185,7 +185,7 @@
     "LLM": "Qwen-3 / GPT-4o",
     "id": "ZH-5-Legal-3",
     "nference_hops": 3,
-    "estimated_tokens": 301,
+    "estimated_tokens": 73017,
     "passrate_M": 9,
     "passrate_N": 20
   },
@@ -209,7 +209,7 @@
     "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
     "id": "EN-4-Legal-4",
     "nference_hops": 3,
-    "estimated_tokens": 589,
+    "estimated_tokens": 45859,
     "passrate_M": 7,
     "passrate_N": 20
   },
@@ -234,7 +234,7 @@
     "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
     "id": "EN-5-Legal-5",
     "nference_hops": 3,
-    "estimated_tokens": 543,
+    "estimated_tokens": 85463,
     "passrate_M": 8,
     "passrate_N": 20
   },
@@ -256,7 +256,7 @@
     "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
     "id": "ZH-6-Report-1",
     "nference_hops": 3,
-    "estimated_tokens": 218,
+    "estimated_tokens": 95218,
     "passrate_M": 9,
     "passrate_N": 20
   },
@@ -278,7 +278,7 @@
     "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
     "id": "ZH-7-Report-2",
     "nference_hops": 3,
-    "estimated_tokens": 220,
+    "estimated_tokens": 76220,
     "passrate_M": 7,
     "passrate_N": 20
   },
@@ -300,7 +300,7 @@
     "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
     "id": "ZH-8-Report-3",
     "nference_hops": 3,
-    "estimated_tokens": 201,
+    "estimated_tokens": 107201,
     "passrate_M": 10,
     "passrate_N": 20
   },
@@ -322,7 +322,7 @@
     "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
     "id": "EN-6-Report-4",
     "nference_hops": 3,
-    "estimated_tokens": 244,
+    "estimated_tokens": 64244,
     "passrate_M": 8,
     "passrate_N": 20
   },
@@ -344,7 +344,7 @@
     "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
     "id": "EN-7-Report-5",
     "nference_hops": 3,
-    "estimated_tokens": 258,
+    "estimated_tokens": 8258,
     "passrate_M": 6,
     "passrate_N": 20
   },
@@ -366,7 +366,7 @@
     "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
     "id": "ZH-9-Code-1",
     "nference_hops": 3,
-    "estimated_tokens": 215,
+    "estimated_tokens": 68545,
     "passrate_M": 8,
     "passrate_N": 20
   },
@@ -388,7 +388,7 @@
     "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
     "id": "ZH-10-Code-2",
     "nference_hops": 3,
-    "estimated_tokens": 221,
+    "estimated_tokens": 10221,
     "passrate_M": 7,
     "passrate_N": 20
   },
@@ -410,7 +410,7 @@
     "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
     "id": "EN-8-Code-3",
     "nference_hops": 3,
-    "estimated_tokens": 218,
+    "estimated_tokens": 10218,
     "passrate_M": 8,
     "passrate_N": 20
   },
@@ -432,7 +432,7 @@
     "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
     "id": "EN-9-Code-4",
     "nference_hops": 3,
-    "estimated_tokens": 240,
+    "estimated_tokens": 90240,
     "passrate_M": 8,
     "passrate_N": 20
   },
@@ -454,7 +454,7 @@
     "LLM": "Qwen-3 / GPT-4o / Gemini-2.5-pro",
     "id": "EN-10-Code-5",
     "nference_hops": 3,
-    "estimated_tokens": 300,
+    "estimated_tokens": 89300,
     "passrate_M": 9,
     "passrate_N": 20
   }
