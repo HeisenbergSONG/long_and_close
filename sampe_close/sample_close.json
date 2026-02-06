@@ -1,0 +1,202 @@
+[
+  {
+    "data_id": "zh_dc_novel_001",
+    "task_type": "dialogue_completion",
+    "question": "请补全以下对话的[空白处]，只输出需要补充的内容。场景：安妮与哈里讨论褐衣男子事件。\n安妮：我看到那个穿褐色西装的男人把纸条塞进了死者的口袋！\n哈里：你确定不是幻觉？船上那么乱。\n安妮：绝对不是！纸条上写着“17.1 22 Kilmorden”。[空白处]\n哈里：那我们得查清楚这个Kilmorden是什么地方。",
+    "source": "THE MAN IN THE BROWN SUIT褐衣男子.txt",
+    "language": "zh",
+    "answer": "安妮：我觉得这和南非钻石盗窃案有关联，我们不能坐视不管。",
+    "topic": "小说情节推理（侦探类小说）",
+    "hallucination_check": {"gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}, "gemini-2.5-flash": {"final_result": {"conflict": 0, "baseless_info": 0}}}
+  },
+  {
+    "data_id": "en_dc_novel_001",
+    "task_type": "dialogue_completion",
+    "question": "Complete the blank in the following dialogue. Output only the supplementary content.\nAnne: I saw the man in the brown suit slip a note into the dead man's pocket!\nHarry: Are you sure it wasn't your imagination? It was chaotic on board.\nAnne: Absolutely not! The note said “17.1 22 Kilmorden”.[blank]\nHarry: Then we need to find out what Kilmorden is.",
+    "source": "THE MAN IN THE BROWN SUIT褐衣男子.txt",
+    "language": "en",
+    "answer": "Anne: I think it's connected to the South African diamond theft case—we can't just ignore it.",
+    "topic": "Novel Plot Reasoning (Detective Novel)",
+    "hallucination_check": {"claude-sonnet-4": {"final_result": {"conflict": 0, "baseless_info": 0}}, "gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}}
+  },
+  {
+    "data_id": "zh_dc_gov_001",
+    "task_type": "dialogue_completion",
+    "question": "补全以下政府工作讨论对话的[空白处]，只输出补充内容。\n领导A：2024年云浮GDP增长目标是5%以上，规上工业增加值要增长7%。\n领导B：固定资产投资和社会消费品零售总额也要同步增长7%和5%。[空白处]\n领导A：对，还要确保外贸进出口增长5%。",
+    "source": "云浮市2024.txt",
+    "language": "zh",
+    "answer": "领导B：全体居民人均可支配收入增长要与经济增长基本同步。",
+    "topic": "政府文件（经济社会发展目标）",
+    "hallucination_check": {"gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}, "gemini-2.5-flash": {"final_result": {"conflict": 0, "baseless_info": 0}}}
+  },
+  {
+    "data_id": "en_dc_code_001",
+    "task_type": "dialogue_completion",
+    "question": "Complete the blank in this code review dialogue. Output only the added content.\nReviewer: The function E parses attribute strings, but it doesn't handle single vs double quotes well.\nDeveloper: Yes, it uses v(m.trim(...)) to strip quotes.[blank]\nReviewer: Good, but we still need to normalize the final output.",
+    "source": "code2.txt",
+    "language": "en",
+    "answer": "Developer: It joins them with spaces at the end to form a clean attribute string.",
+    "topic": "工程代码理解",
+    "hallucination_check": {"claude-sonnet-4": {"final_result": {"conflict": 0, "baseless_info": 0}}, "gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}}
+  },
+  {
+    "data_id": "zh_dc_law_001",
+    "task_type": "dialogue_completion",
+    "question": "补全以下法律案例讨论对话的[空白处]，只输出补充内容。\n律师A：这份2001年判决认定夫妻共同债务应共同清偿。\n律师B：对，金雪良欠款60000元，范淑萍负连带责任。[空白处]\n律师A：这符合当时的《民法通则》规定。",
+    "source": "2001年05月裁判文书数据.txt",
+    "language": "zh",
+    "answer": "律师B：而且两被告离婚协议中写明无债务，但法院仍判连带清偿。",
+    "topic": "法律（民事判决案例）",
+    "hallucination_check": {"gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}, "claude-sonnet-4": {"final_result": {"conflict": 0, "baseless_info": 0}}}
+  },
+  {
+    "data_id": "en_rc_novel_002",
+    "task_type": "reading_comprehension",
+    "question": "In the Prologue of the novel, Nadina states there is only one man she ever feared and he is dead. Who is ultimately revealed to be this man, and why does this cause her extreme fear at the end?",
+    "source": "THE MAN IN THE BROWN SUIT褐衣男子.txt",
+    "language": "en",
+    "answer": "The man is Harry Lucas (real name John Harold Eardsley). Nadina feared his 'devil’s own temper'. She believed he died in the war, so realizing he is alive (appearing as Lucas) causes her extreme fear because her betrayal and blackmail were based on the assumption he was dead.",
+    "topic": "Novel Plot Reasoning (Detective Novel)",
+    "hallucination_check": {"gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}, "gemini-2.5-flash": {"final_result": {"conflict": 0, "baseless_info": 0}}}
+  },
+  {
+    "data_id": "zh_rc_law_001",
+    "task_type": "reading_comprehension",
+    "question": "根据（2001）阿民初字第20号判决书，法院如何处理彩礼返还问题？请说明依据和具体判决内容。",
+    "source": "2001年05月裁判文书数据.txt",
+    "language": "zh",
+    "answer": "法院认为双方结婚时间不长，应酌情返还。原告同意退还三金两银和部分彩礼，被告要求全部返还7074元未获支持。判决原告返还彩礼6300元及三金两银（金项链、金戒指、金耳坠、银耳坠、银戒指），分两次于2001年6月30日和7月30日前返还。依据《婚姻法》第三十一条、第三十九条及最高法《关于审理离婚案件处理财产分割问题的若干具体意见》第十九条。",
+    "topic": "法律（婚姻财产分割案例）",
+    "hallucination_check": {"claude-sonnet-4": {"final_result": {"conflict": 0, "baseless_info": 0}}, "gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}}
+  },
+  {
+    "data_id": "en_rc_gov_001",
+    "task_type": "reading_comprehension",
+    "question": "According to the 2024 Yunfu Government Work Report task assignment, what is the GDP growth target for 2024, and which department is primarily responsible for it?",
+    "source": "云浮市2024.txt",
+    "language": "en",
+    "answer": "The GDP growth target is 5% or more. The primary responsible department is the Municipal Development and Reform Bureau (市发展改革局), with all counties/cities/districts responsible and other departments cooperating.",
+    "topic": "Government Document (Economic Targets)",
+    "hallucination_check": {"gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}, "gemini-2.5-flash": {"final_result": {"conflict": 0, "baseless_info": 0}}}
+  },
+  {
+    "data_id": "zh_rc_code_001",
+    "task_type": "reading_comprehension",
+    "question": "在code2.txt中，函数w对href属性值'javascript:alert(document.cookie)'会返回什么？请说明原因和关键代码逻辑。",
+    "source": "code2.txt",
+    "language": "zh",
+    "answer": "返回空字符串 \"\"。原因：检测到'javascript:'协议不在允许列表（http, https, mailto, tel, data:image, ftp, ./, ../, #, /）中。关键逻辑：在w函数中，对href或src属性检查值是否以允许协议开头，否则显式返回\"\"，防止XSS。",
+    "topic": "工程代码理解（XSS防护）",
+    "hallucination_check": {"claude-sonnet-4": {"final_result": {"conflict": 0, "baseless_info": 0}}, "gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}}
+  },
+  {
+    "data_id": "en_rc_code_002",
+    "task_type": "reading_comprehension",
+    "question": "In code2.txt, what does the basename function return for the path '/assets/scripts/bundle.70679.268f5fe8.min.js' with extension '.min.js'? Describe the key steps.",
+    "source": "code2.txt",
+    "language": "en",
+    "answer": "It returns 'bundle.70679.268f5fe8'. Key steps: 1. Find the last '/' to extract the filename. 2. Check if the extension matches the end of the filename. 3. Remove the extension using slice and lastIndexOf if it matches.",
+    "topic": "Engineering Code Understanding",
+    "hallucination_check": {"gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}, "gemini-2.5-flash": {"final_result": {"conflict": 0, "baseless_info": 0}}}
+  },
+  {
+    "data_id": "zh_mtqa_novel_001",
+    "task_type": "multi_text_qa",
+    "question": "===文本一===\nPrologue中Nadina说她保留了一些南非钻石样本，其中一两颗是独一无二的，可以证明从未经过De Beers。\n===文本二===\nChapter XXXII中，Race上校说“我永不忘记面孔，我小时候见过你一次”，确认Harry真实身份为John Harold Eardsley。\n===文本三===\n结尾Sir Eustace信中提到他保留了一笔秘密资金，并对Anne和Harry的婚姻表示“祝福”。\n问题：结合三段文本，分析Nadina对Harry的恐惧根源，以及Sir Eustace最终的态度转变原因。",
+    "source": "THE MAN IN THE BROWN SUIT褐衣男子.txt",
+    "language": "zh",
+    "answer": "Nadina恐惧根源在于她知道真正的Harry Lucas（即John Harold Eardsley）有“devil’s own temper”（暴躁脾气），而她以为他已死于战争；发现他活着时，其背叛与敲诈的前提崩塌，导致极度恐惧。Sir Eustace态度转变原因是他虽曾因自我保护恐惧两次试图杀Anne，但本质上对她有善意，最终接受失败，以宽容语气写信，体现“基督徒宽容精神”。",
+    "topic": "小说情节推理（侦探类小说）",
+    "hallucination_check": {"gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}, "claude-sonnet-4": {"final_result": {"conflict": 0, "baseless_info": 0}}}
+  },
+  {
+    "data_id": "en_mtqa_law_001",
+    "task_type": "multi_text_qa",
+    "question": "===Text 1===\n(2001) Shanmin Chuzi No.82: Defendant Jin Xueliang owes plaintiff Yu Kangbao 60,000 yuan in goods payment, defendant Fan Shuping bears joint liability.\n===Text 2===\n(2001) Amin Chuzi No.20: Divorce granted between Ling and Wei, plaintiff to return 6,300 yuan bride price and three gold two silver items.\n===Text 3===\nLu Feng Court judgment: Plaintiff Ou Binglin's excess claim of 88,656.81 yuan beyond counterclaim was not handled; limitation period restarts from second-instance judgment effective date.\nQuestion: Combining the three judgments, analyze the application characteristics and differences of 'joint liability', 'bride price return' and 'restarting of limitation period' in Chinese civil judgments.",
+    "source": "2001年05月裁判文书数据.txt",
+    "language": "en",
+    "answer": "Common characteristics: All strictly follow applicable laws (Civil Law General Principles, Marriage Law, Contract Law) and judicial interpretations, emphasizing fact-finding, evidence and fairness. Differences: Joint liability stresses co-debt repayment (marital debt); bride price return considers short marriage duration with discretionary partial return; limitation period interruption allows remaining claims to restart without violating 'one case one judgment' principle.",
+    "topic": "Legal (Case Reasoning)",
+    "hallucination_check": {"gemini-2.5-flash": {"final_result": {"conflict": 0, "baseless_info": 0}}, "gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}}
+  },
+  {
+    "data_id": "zh_mtqa_gov_001",
+    "task_type": "multi_text_qa",
+    "question": "===文本一===\n2024年云浮市GDP增长目标5%以上，规上工业增加值增长7%，固定资产投资增长7%。\n===文本二===\n社会消费品零售总额增长5%，外贸进出口增长5%，地方一般公共预算收入保持平稳。\n===文本三===\n全体居民人均可支配收入增长与经济增长基本同步，由市发展改革局牵头负责。\n问题：结合三段文本，说明2024年云浮市主要预期目标的整体逻辑和牵头部门分工特点。",
+    "source": "云浮市2024.txt",
+    "language": "zh",
+    "answer": "整体逻辑：以5%以上GDP增长为核心，工业、投资、消费、外贸等多维度协同发力，确保经济稳定增长与民生同步改善。牵头部门分工特点：市发展改革局统筹GDP、投资、收入等宏观目标，市工业和信息化局负责工业增长，市商务局负责消费和外贸，体现“条块结合、部门协同”的特点。",
+    "topic": "政府文件（经济社会发展目标）",
+    "hallucination_check": {"claude-sonnet-4": {"final_result": {"conflict": 0, "baseless_info": 0}}, "gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}}
+  },
+  {
+    "data_id": "en_mtqa_code_001",
+    "task_type": "multi_text_qa",
+    "question": "===Text 1===\nFunction w checks 'javascript:' protocol in background and href/src attributes, returns empty string if detected.\n===Text 2===\nFor style attribute, w uses regex d.test(n) for expression() and h.test(n) combined with u.test(n) for dangerous urls.\n===Text 3===\nIn _ parser, dangerous attributes like onclick not in whiteList are removed via callback returning null.\nQuestion: Combining the three code segments, explain how the code prevents XSS attacks in attribute parsing and tag sanitization.",
+    "source": "code2.txt",
+    "language": "en",
+    "answer": "The code prevents XSS by: 1) Explicitly blocking 'javascript:' protocol in href/src/background via protocol whitelist; 2) Detecting and stripping dangerous style expressions (expression(), url(javascript:...)); 3) Removing non-whitelisted attributes (e.g. onclick) during tag parsing, ensuring only safe attributes remain in output.",
+    "topic": "Engineering Code Understanding (XSS Prevention)",
+    "hallucination_check": {"gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}, "gemini-2.5-flash": {"final_result": {"conflict": 0, "baseless_info": 0}}}
+  },
+  {
+    "data_id": "zh_mtqa_mixed_001",
+    "task_type": "multi_text_qa",
+    "question": "===文本一===\n判决书（2001）善民初字第82号：夫妻共同债务应共同清偿。\n===文本二===\n云浮2024报告：持续推进“一网通办”，政务服务事项全程网办率达到80%以上。\n===文本三===\n小说结尾：Anne与Harry在岛上生活，Sir Eustace寄来宽容信件。\n问题：结合三段不同类型文本，简述它们在各自领域体现的“公平与责任”主题。",
+    "source": "2001年裁判文书+云浮市2024.txt+THE MAN IN THE BROWN SUIT",
+    "language": "zh",
+    "answer": "裁判文书体现法律公平（共同债务连带清偿）；政府报告体现行政责任（提升政务服务效率，便民利企）；小说体现人性宽容与责任（Sir Eustace最终选择宽恕与自我承担）。三者均强调责任承担与公平正义的不同实现路径。",
+    "topic": "综合主题（法律+政府+文学）",
+    "hallucination_check": {"claude-sonnet-4": {"final_result": {"conflict": 0, "baseless_info": 0}}, "gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}}
+  },
+  {
+    "data_id": "zh_ts_gov_001",
+    "task_type": "text_summarization",
+    "question": "请总结以下文本，形成简洁摘要：\n云浮市2024年经济社会发展主要预期目标：地区生产总值增长5%以上；规上工业增加值增长7%；固定资产投资总额增长7%；社会消费品零售总额增长5%；外贸进出口总额增长5%；地方一般公共预算收入保持平稳；全体居民人均可支配收入增长与经济增长基本同步。",
+    "source": "云浮市2024.txt",
+    "language": "zh",
+    "answer": "2024年云浮市主要预期目标为GDP增长5%以上，规上工业增加值、固定资产投资增长7%，社零、外贸增长5%，预算收入平稳，居民收入与经济增长基本同步。",
+    "topic": "政府文件（经济目标）",
+    "hallucination_check": {"gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}, "gemini-2.5-flash": {"final_result": {"conflict": 0, "baseless_info": 0}}}
+  },
+  {
+    "data_id": "en_ts_novel_001",
+    "task_type": "text_summarization",
+    "question": "Please summarize the following text into a concise abstract:\nIn the end, Anne reflects that she can forgive Sir Eustace easily but will never forgive Nadina. She mentions her son lying in the sun, nicknamed 'man in a brown suit', and Suzanne's humorous cable about head shape, to which Anne replies 'Platycephalic'.",
+    "source": "THE MAN IN THE BROWN SUIT褐衣男子.txt",
+    "language": "en",
+    "answer": "Anne forgives Sir Eustace but never Nadina. She describes her son's sunny play as a 'brown suit man' and humorously replies to Suzanne's cable about his head shape with 'Platycephalic'.",
+    "topic": "Novel Plot Reasoning (Ending Reflection)",
+    "hallucination_check": {"claude-sonnet-4": {"final_result": {"conflict": 0, "baseless_info": 0}}, "gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}}
+  },
+  {
+    "data_id": "zh_ts_law_001",
+    "task_type": "text_summarization",
+    "question": "请总结以下判决书内容，形成摘要：\n（2001）善民初字第82号判决：被告金雪良向原告俞康保偿付货款60000元，被告范淑萍负连带责任。依据《民法通则》第108条及《民事诉讼法》第84条。两被告未到庭，视为放弃诉讼权利。",
+    "source": "2001年05月裁判文书数据.txt",
+    "language": "zh",
+    "answer": "嘉善县人民法院判决被告金雪良偿还原告俞康保货款6万元，范淑萍承担连带责任。两被告经公告送达未到庭，依据《民法通则》和《民事诉讼法》相关规定作出判决。",
+    "topic": "法律（民事判决摘要）",
+    "hallucination_check": {"gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}, "gemini-2.5-flash": {"final_result": {"conflict": 0, "baseless_info": 0}}}
+  },
+  {
+    "data_id": "en_ts_code_001",
+    "task_type": "text_summarization",
+    "question": "Summarize the following code logic concisely:\nThe function w sanitizes attribute values: for href/src, checks against allowed protocols and returns '' if 'javascript:' is detected; for background, blocks javascript: urls; for style, blocks expression() and dangerous url patterns.",
+    "source": "code2.txt",
+    "language": "en",
+    "answer": "Function w prevents XSS by returning empty string for dangerous values: blocks 'javascript:' in href/src/background, and expression()/unsafe urls in style attributes.",
+    "topic": "Engineering Code Understanding (Sanitization)",
+    "hallucination_check": {"claude-sonnet-4": {"final_result": {"conflict": 0, "baseless_info": 0}}, "gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}}
+  },
+  {
+    "data_id": "zh_ts_gov_code_001",
+    "task_type": "text_summarization",
+    "question": "请总结以下文本，形成摘要：\n云浮市2024年推进“一网通办”，政务服务事项可全程网办率达到80%以上；纵深推进“数字机关”建设，全市政府部门电子公文办结率保持在98%以上；深化数字政府改革，打造全市数字政府新型电子政务外网。",
+    "source": "云浮市2024.txt",
+    "language": "zh",
+    "answer": "云浮市2024年重点推进数字政府建设：政务服务全程网办率目标80%以上，电子公文办结率98%以上，并打造新型电子政务外网。",
+    "topic": "政府文件（数字化转型）",
+    "hallucination_check": {"gpt-4.1": {"final_result": {"conflict": 0, "baseless_info": 0}}, "claude-sonnet-4": {"final_result": {"conflict": 0, "baseless_info": 0}}}
+  }
+]
